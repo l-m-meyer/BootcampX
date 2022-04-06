@@ -9,7 +9,6 @@ const pool = new Pool({
 
 const args = process.argv.slice(2);
 const month = args[0];
-const limit = args[1];
 
 pool.query(`
   SELECT DISTINCT teachers.name as teacher, cohorts.name as cohort
